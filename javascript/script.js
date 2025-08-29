@@ -70,7 +70,111 @@ document.getElementById('clickCallButton-1')
     const coin = parseInt(document.getElementById('coin-value').innerText)
     const updateCoin = coin - 20
     if(coin > 0){
-        alert('📞 National Emergency 999...')
+        alert('📞 Calling National Emergency 999...')
+    }
+    if(coin < 20){
+        alert('❌ আপনার পর্যাপ্ত কয়েন নেই! কল করতে কমপক্ষে 20 কয়েন লাগবে।')
+        return;
+    }
+    document.getElementById('coin-value').innerText = updateCoin;  
+})
+document.getElementById('clickCallButton-2')
+.addEventListener('click', function(){
+    const coin = parseInt(document.getElementById('coin-value').innerText)
+    const updateCoin = coin - 20
+    if(coin > 0){
+        alert('📞 Calling Police Station 999...')
+    }
+    if(coin < 20){
+        alert('❌ আপনার পর্যাপ্ত কয়েন নেই! কল করতে কমপক্ষে 20 কয়েন লাগবে।')
+        return;
+    }
+    document.getElementById('coin-value').innerText = updateCoin;  
+})
+document.getElementById('clickCallButton-3')
+.addEventListener('click', function(){
+    const coin = parseInt(document.getElementById('coin-value').innerText)
+    const updateCoin = coin - 20
+    if(coin > 0){
+        alert('📞 Calling Fire Service 999...')
+    }
+    if(coin < 20){
+        alert('❌ আপনার পর্যাপ্ত কয়েন নেই! কল করতে কমপক্ষে 20 কয়েন লাগবে।')
+        return;
+    }
+    document.getElementById('coin-value').innerText = updateCoin;  
+})
+document.getElementById('clickCallButton-4')
+.addEventListener('click', function(){
+    const coin = parseInt(document.getElementById('coin-value').innerText)
+    const updateCoin = coin - 20
+    if(coin > 0){
+        alert('📞 Calling Ambulance 1994-999999...')
+    }
+    if(coin < 20){
+        alert('❌ আপনার পর্যাপ্ত কয়েন নেই! কল করতে কমপক্ষে 20 কয়েন লাগবে।')
+        return;
+    }
+    document.getElementById('coin-value').innerText = updateCoin;  
+})
+document.getElementById('clickCallButton-5')
+.addEventListener('click', function(){
+    const coin = parseInt(document.getElementById('coin-value').innerText)
+    const updateCoin = coin - 20
+    if(coin > 0){
+        alert('📞 Calling Women & Child Helpline 109...')
+    }
+    if(coin < 20){
+        alert('❌ আপনার পর্যাপ্ত কয়েন নেই! কল করতে কমপক্ষে 20 কয়েন লাগবে।')
+        return;
+    }
+    document.getElementById('coin-value').innerText = updateCoin;  
+})
+document.getElementById('clickCallButton-6')
+.addEventListener('click', function(){
+    const coin = parseInt(document.getElementById('coin-value').innerText)
+    const updateCoin = coin - 20
+    if(coin > 0){
+        alert('📞 Calling Anti-Corruption 106...')
+    }
+    if(coin < 20){
+        alert('❌ আপনার পর্যাপ্ত কয়েন নেই! কল করতে কমপক্ষে 20 কয়েন লাগবে।')
+        return;
+    }
+    document.getElementById('coin-value').innerText = updateCoin;  
+})
+document.getElementById('clickCallButton-7')
+.addEventListener('click', function(){
+    const coin = parseInt(document.getElementById('coin-value').innerText)
+    const updateCoin = coin - 20
+    if(coin > 0){
+        alert('📞 Calling Electricity Outage 16216...')
+    }
+    if(coin < 20){
+        alert('❌ আপনার পর্যাপ্ত কয়েন নেই! কল করতে কমপক্ষে 20 কয়েন লাগবে।')
+        return;
+    }
+    document.getElementById('coin-value').innerText = updateCoin;  
+})
+document.getElementById('clickCallButton-8')
+.addEventListener('click', function(){
+    const coin = parseInt(document.getElementById('coin-value').innerText)
+    const updateCoin = coin - 20
+    if(coin > 0){
+        alert('📞 Calling Brac 16445...')
+    }
+    if(coin < 20){
+        alert('❌ আপনার পর্যাপ্ত কয়েন নেই! কল করতে কমপক্ষে 20 কয়েন লাগবে।')
+        return;
+    }
+    document.getElementById('coin-value').innerText = updateCoin;  
+})
+document.getElementById('clickCallButton-9')
+.addEventListener('click', function(){
+    const coin = parseInt(document.getElementById('coin-value').innerText)
+    const updateCoin = coin - 20
+    if(coin > 0){
+        alert('📞 Calling Bangladesh Railway 163...')
     }
     if(coin < 20){
         alert('❌ আপনার পর্যাপ্ত কয়েন নেই! কল করতে কমপক্ষে 20 কয়েন লাগবে।')
@@ -80,53 +184,128 @@ document.getElementById('clickCallButton-1')
 })
 
 
+// toggling
+document.getElementById('clickCallButton-1')
+.addEventListener('click', function(){
+    document.getElementById('nationalEmergencyCallHistory').style.display = 'block'
+    document.getElementById('policeCallHistory').style.display = 'none'
+    document.getElementById('fireServiceCallHistory').style.display = 'none'
+    document.getElementById('ambulanceCallHistory').style.display = 'none'
+    document.getElementById('women&ChildHelplineCallHistory').style.display = 'none'
+    document.getElementById('antiCorruptionCallHistory').style.display = 'none'
+    document.getElementById('electricityOutageCallHistory').style.display = 'none'
+    document.getElementById('bracCallHistory').style.display = 'none'
+    document.getElementById('bangladeshRailwayCallHistory').style.display = 'none'
+})
+document.getElementById('clickCallButton-2')
+.addEventListener('click', function(){
+    document.getElementById('nationalEmergencyCallHistory').style.display = 'none'
+    document.getElementById('policeCallHistory').style.display = 'block'
+    document.getElementById('fireServiceCallHistory').style.display = 'none'
+    document.getElementById('ambulanceCallHistory').style.display = 'none'
+    document.getElementById('women&ChildHelplineCallHistory').style.display = 'none'
+    document.getElementById('antiCorruptionCallHistory').style.display = 'none'
+    document.getElementById('electricityOutageCallHistory').style.display = 'none'
+    document.getElementById('bracCallHistory').style.display = 'none'
+    document.getElementById('bangladeshRailwayCallHistory').style.display = 'none'
+})
+document.getElementById('clickCallButton-3')
+.addEventListener('click', function(){
+    document.getElementById('nationalEmergencyCallHistory').style.display = 'none'
+    document.getElementById('policeCallHistory').style.display = 'none'
+    document.getElementById('fireServiceCallHistory').style.display = 'block'
+    document.getElementById('ambulanceCallHistory').style.display = 'none'
+    document.getElementById('women&ChildHelplineCallHistory').style.display = 'none'
+    document.getElementById('antiCorruptionCallHistory').style.display = 'none'
+    document.getElementById('electricityOutageCallHistory').style.display = 'none'
+    document.getElementById('bracCallHistory').style.display = 'none'
+    document.getElementById('bangladeshRailwayCallHistory').style.display = 'none'
+})
+document.getElementById('clickCallButton-4')
+.addEventListener('click', function(){
+    document.getElementById('nationalEmergencyCallHistory').style.display = 'none'
+    document.getElementById('policeCallHistory').style.display = 'none'
+    document.getElementById('fireServiceCallHistory').style.display = 'none'
+    document.getElementById('ambulanceCallHistory').style.display = 'block'
+    document.getElementById('women&ChildHelplineCallHistory').style.display = 'none'
+    document.getElementById('antiCorruptionCallHistory').style.display = 'none'
+    document.getElementById('electricityOutageCallHistory').style.display = 'none'
+    document.getElementById('bracCallHistory').style.display = 'none'
+    document.getElementById('bangladeshRailwayCallHistory').style.display = 'none'
+})
+document.getElementById('clickCallButton-5')
+.addEventListener('click', function(){
+    document.getElementById('nationalEmergencyCallHistory').style.display = 'none'
+    document.getElementById('policeCallHistory').style.display = 'none'
+    document.getElementById('fireServiceCallHistory').style.display = 'none'
+    document.getElementById('ambulanceCallHistory').style.display = 'none'
+    document.getElementById('women&ChildHelplineCallHistory').style.display = 'block'
+    document.getElementById('antiCorruptionCallHistory').style.display = 'none'
+    document.getElementById('electricityOutageCallHistory').style.display = 'none'
+    document.getElementById('bracCallHistory').style.display = 'none'
+    document.getElementById('bangladeshRailwayCallHistory').style.display = 'none'
+})
+document.getElementById('clickCallButton-6')
+.addEventListener('click', function(){
+    document.getElementById('nationalEmergencyCallHistory').style.display = 'none'
+    document.getElementById('policeCallHistory').style.display = 'none'
+    document.getElementById('fireServiceCallHistory').style.display = 'none'
+    document.getElementById('ambulanceCallHistory').style.display = 'none'
+    document.getElementById('women&ChildHelplineCallHistory').style.display = 'none'
+    document.getElementById('antiCorruptionCallHistory').style.display = 'block'
+    document.getElementById('electricityOutageCallHistory').style.display = 'none'
+    document.getElementById('bracCallHistory').style.display = 'none'
+    document.getElementById('bangladeshRailwayCallHistory').style.display = 'none'
+})
+document.getElementById('clickCallButton-7')
+.addEventListener('click', function(){
+    document.getElementById('nationalEmergencyCallHistory').style.display = 'none'
+    document.getElementById('policeCallHistory').style.display = 'none'
+    document.getElementById('fireServiceCallHistory').style.display = 'none'
+    document.getElementById('ambulanceCallHistory').style.display = 'none'
+    document.getElementById('women&ChildHelplineCallHistory').style.display = 'none'
+    document.getElementById('antiCorruptionCallHistory').style.display = 'none'
+    document.getElementById('electricityOutageCallHistory').style.display = 'block'
+    document.getElementById('bracCallHistory').style.display = 'none'
+    document.getElementById('bangladeshRailwayCallHistory').style.display = 'none'
+})
+document.getElementById('clickCallButton-8')
+.addEventListener('click', function(){
+    document.getElementById('nationalEmergencyCallHistory').style.display = 'none'
+    document.getElementById('policeCallHistory').style.display = 'none'
+    document.getElementById('fireServiceCallHistory').style.display = 'none'
+    document.getElementById('ambulanceCallHistory').style.display = 'none'
+    document.getElementById('women&ChildHelplineCallHistory').style.display = 'none'
+    document.getElementById('antiCorruptionCallHistory').style.display = 'none'
+    document.getElementById('electricityOutageCallHistory').style.display = 'block'
+    document.getElementById('bracCallHistory').style.display = 'none'
+    document.getElementById('bangladeshRailwayCallHistory').style.display = 'none'
+})
+document.getElementById('clickCallButton-9')
+.addEventListener('click', function(){
+    document.getElementById('nationalEmergencyCallHistory').style.display = 'none'
+    document.getElementById('policeCallHistory').style.display = 'none'
+    document.getElementById('fireServiceCallHistory').style.display = 'none'
+    document.getElementById('ambulanceCallHistory').style.display = 'none'
+    document.getElementById('women&ChildHelplineCallHistory').style.display = 'none'
+    document.getElementById('antiCorruptionCallHistory').style.display = 'none'
+    document.getElementById('electricityOutageCallHistory').style.display = 'none'
+    document.getElementById('bracCallHistory').style.display = 'none'
+    document.getElementById('bangladeshRailwayCallHistory').style.display = 'block'
+})
 
 
 
 
 
 
-// function getInputValueNumber (id) {
-//     const inputFiled = document.getElementById(id)
-//     const inputFiledValue = inputFiled.value
-//     const inputFiledValueNumber = parseInt(inputFiledValue)
 
-//     return inputFiledValueNumber
-// }
+// // add mony toggling
+// document.getElementById('add-button')
+// .addEventListener('click', function(){
+//     document.getElementById('cash-out-parent').style.display = 'none'
 
+//     document.getElementById('transfer-money-parent').style.display = 'none'
 
-
-// add money features
-// document.getElementById('add-money-btn')
-// .addEventListener('click', function(e){
-//     e.preventDefault()
-    
-//     const bank = document.getElementById('bank').value
-
-//     const accountNumber = document.getElementById('account-number').value
-
-//     // const amount = parseInt(document.getElementById('add-amount').value)
-//     const amount = getInputValueNumber('add-amount')
-
-//     // const pin = parseInt(document.getElementById('add-pin').value)
-//     const pin = getInputValueNumber('add-pin')
-
-//     const availableBalance = parseInt(document.getElementById('available-balance').innerText)
-
-//     console.log(amount, availableBalance)
-
-//     if(accountNumber.length < 11){
-//         alert('please provide a valid account number')
-//         return;
-//     }
-
-//     if(pin !== validPin){
-//         alert('Please provide valid pin number')
-//         return;
-//     }
-
-//     const totalNewAvailableBalance = amount + availableBalance
-
-//     document.getElementById('available-balance').innerText = totalNewAvailableBalance
-
+//     document.getElementById('add-money-parent').style.display = 'block'
 // })
