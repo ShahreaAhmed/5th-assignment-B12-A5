@@ -4,7 +4,7 @@ const timeString = time.toLocaleTimeString();
 document.getElementById('current-time').innerText = timeString;
 
 
-// heart button call
+// heart button click value count
 let heartCount = 0;
 
 document.getElementById('heart-button-1')
@@ -63,7 +63,21 @@ document.getElementById('heart-button-9')
 })
 
 
+// call button action
 
+document.getElementById('clickCallButton-1')
+.addEventListener('click', function(){
+    const coin = parseInt(document.getElementById('coin-value').innerText)
+    const updateCoin = coin - 20
+    if(coin > 0){
+        alert('📞 National Emergency 999...')
+    }
+    if(coin < 20){
+        alert('❌ আপনার পর্যাপ্ত কয়েন নেই! কল করতে কমপক্ষে 20 কয়েন লাগবে।')
+        return;
+    }
+    document.getElementById('coin-value').innerText = updateCoin;  
+})
 
 
 
