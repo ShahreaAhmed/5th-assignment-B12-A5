@@ -13,12 +13,20 @@ function addCallHistory (name, number){
                         <div>
                             <p class="text-[18px]">${time}</p>
                         </div>
-                    </div>
+                    </div>         
     
     `
     callHistoryContainer.appendChild(div)
 
+ document.getElementById('clear-button')
+.addEventListener('click', function(){
+
+    callHistoryContainer.innerHTML = "";
+    
+})
+
 }
+
 
 // heart button click value count
 let heartCount = 0;
@@ -361,4 +369,7 @@ document.getElementById('copyCount9')
     copyCount++;
     copyButtonClick.innerText = copyCount
 })
+
+
+
 

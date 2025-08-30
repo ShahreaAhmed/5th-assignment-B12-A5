@@ -22,36 +22,36 @@
 </head>
 
 <body class="bg-[#f5fff6] h-[100vh] ">
-    <header class="max-w-[1920px] mx-auto">
-        <nav class="min-h-[100px] flex items-center justify-between bg-white px-[60px] py-[24px]">
+    <header class="max-w-[1920px] md:mx-auto">
+        <nav class="min-h-[100px] flex items-center md:justify-between justify-around bg-white md:px-[60px] md:py-[24px]">
 
             <div class="flex items-center">
-                <img src="./assets/logo.png" class="w-[50px] h-[50px] mr-[10px]" alt="">
-                <h1 class="font-extrabold text-[24px] text-[#006747] leading-[27px] inter-font">Emergency <br> Service
+                <img src="./assets/logo.png" class="md:w-[50px] h-[50px] mr-[6px] md:mr-[10px]" alt="">
+                <h1 class="font-extrabold text-lg md:text-[24px] text-[#006747] leading-[22px] md:leading-[27px] inter-font">Emergency <br> Service
                 </h1>
             </div>
 
             <div class="flex">
-                <h3 class="flex justify-center items-center bg-[#41ff6b1a] mr-5 px-[35px] py-[7px] rounded-[50px] inter-font font-black"><span id="heartClickNumber" class="p-[10px]">0</span> <img
+                <h3 class="flex justify-center items-center bg-[#41ff6b1a] mr-2 md:mr-5 px-2 md:px-[35px] md:py-[7px] rounded-[50px] inter-font font-black"><span id="heartClickNumber" class="p-[10px]">0</span> <img
                         src="./assets/heart.png" class="max-w-[30px] max-h-[30px]" alt=""></h3>
-                <h3 class="flex justify-center items-center bg-[#41ff6b1a] mr-5 px-5 py-[10px] rounded-[50px] inter-font font-black"><span id="coin-value" class="p-[10px]">100</span> <img
+                <h3 class="flex justify-center items-center bg-[#41ff6b1a] mr-2 md:mr-5 md:px-5 px-2 md:py-[10px] rounded-[50px] inter-font font-black"><span id="coin-value" class="md:p-[10px]">100</span> <img
                         src="./assets/coin.png" class="max-w-6 max-h-6" alt=""></h3>
-                <h3 class="flex bg-[#00a63e] px-9 py-[10px] justify-center items-center font-semibold rounded-[50px] text-white inter-font"><span id="copyTotalValueCounter">0</span> Copy</h3>
+                <h3 class="flex bg-[#00a63e] px-[5px] md:px-9 md:py-[10px] justify-center items-center font-semibold rounded-[50px] text-white inter-font"><span id="copyTotalValueCounter" class="mr-1 md:mr-2">0</span>Copy</h3>
             </div>
         </nav>
 
         <div class="bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] p-[21px]">
             <img src="./assets/logo-dark.png" class="w-[92px] h-[92px] mx-auto" alt="">
-            <h1 class="text-center font-semibold text-[40px] text-white">জরুরি সেবা ডিরেক্টরি</h1>
-            <p class="text-center font-semibold text-xl text-white">Government Emergency Services at Your Fingertip – A Project by Government
+            <h1 class="text-center font-semibold text-[35px] md:text-[40px] text-white">জরুরি সেবা ডিরেক্টরি</h1>
+            <p class="text-center font-semibold text-[14px] md:text-xl text-white">Government Emergency Services at Your Fingertip – A Project by Government
                 of the People’s Republic of Bangladesh</p>
         </div>
     </header>
 
     <main>
-        <div id="card-container" class="w-11/12 mx-auto py-12 grid grid-cols-12 gap-[30px] max-w-[1800px]">
-            <div id="card-box" class=" col-span-9">
-                <div class="joruri-seba-card grid grid-cols-3 gap-[30px]">
+        <div id="card-container" class="w-11/12 mx-auto py-12 grid md:grid-cols-12 gap-[30px] max-w-[1800px]">
+            <div id="card-box" class="col-span-9">
+                <div class="joruri-seba-card grid md:grid-cols-3 gap-[30px]">
 
                     <div class="card bg-white shadow-md">
                         <div class="p-8  ">
@@ -245,7 +245,7 @@
                 </div>
             </div>
 
-            <div id="call-history-box" class=" bg-white col-span-3 shadow-md p-6">
+            <div class=" bg-white col-span-9 md:col-span-3 shadow-md p-6">
 
                 <div class="flex justify-between items-center ">
                         <div>
@@ -255,42 +255,12 @@
                         <button id="clear-button" type="submit" class="btn text-white rounded-[50px] font-semibold inter-font bg-[#00A63E]">Clear</button>
                     </div>
                     </div>
+                    <div id="call-history-box">
 
-                    <div id="nationalEmergencyCallHistory" style="display: none;" class="flex justify-between items-center mt-4 bg-[#FAFAFA] p-4 rounded-lg">
-                        
                     </div>
 
-                    <div id="policeCallHistory" style="display: none;" class="flex justify-between items-center mt-4 bg-[#FAFAFA] p-4 rounded-lg">
-                        
-                    </div>
-
-                    <div id="fireServiceCallHistory" style="display: none;" class="flex justify-between items-center mt-4 bg-[#FAFAFA] p-4 rounded-lg">
-                        
-                    </div>
-
-                    <div id="ambulanceCallHistory" style="display: none;" class="flex justify-between items-center mt-4 bg-[#FAFAFA] p-4 rounded-lg">
-                        
-                    </div>
-
-                    <div id="women&ChildHelplineCallHistory" style="display: none;" class="flex justify-between items-center mt-4 bg-[#FAFAFA] p-4 rounded-lg">
-                        
-                    </div>
-
-                    <div id="antiCorruptionCallHistory" style="display: none;" class="flex justify-between items-center mt-4 bg-[#FAFAFA] p-4 rounded-lg">
-                       
-                    </div>
-
-                    <div id="electricityOutageCallHistory" style="display: none;" class="flex justify-between items-center mt-4 bg-[#FAFAFA] p-4 rounded-lg">
-                        
-                    </div>
-
-                    <div id="bracCallHistory" style="display: none;" class="flex justify-between items-center mt-4 bg-[#FAFAFA] p-4 rounded-lg">
-                        
-                    </div>
-
-                    <div id="bangladeshRailwayCallHistory" style="display: none;" class="flex justify-between items-center mt-4 bg-[#FAFAFA] p-4 rounded-lg">
-                        
-                    </div>
+                   
+                   </div>
 
 
                 </div>
