@@ -36,7 +36,7 @@
                         src="./assets/heart.png" class="max-w-[30px] max-h-[30px]" alt=""></h3>
                 <h3 class="flex justify-center items-center bg-[#41ff6b1a] mr-5 px-5 py-[10px] rounded-[50px] inter-font font-black"><span id="coin-value" class="p-[10px]">100</span> <img
                         src="./assets/coin.png" class="max-w-6 max-h-6" alt=""></h3>
-                <h3 class="flex bg-[#00a63e] px-9 py-[10px] justify-center items-center font-semibold rounded-[50px] text-white inter-font">2 Copy</h3>
+                <h3 class="flex bg-[#00a63e] px-9 py-[10px] justify-center items-center font-semibold rounded-[50px] text-white inter-font"><span id="copyTotalValueCounter">0</span> Copy</h3>
             </div>
         </nav>
 
@@ -67,7 +67,7 @@
                             <h2 class="mt-6 roboto-font text-[32px] font-bold">999</h2>
                             <span class="hind-madurai-font bg-[#F2F2F2] px-4 py-[6px] rounded-full text-[#5C5C5C] text-[18px] mt-[2px]">সার্বজনীন</span>
                             <div class="card-actions mt-6 justify-between grid grid-cols-2">
-                                <button class="btn bg-white rounded-lg "><i class="fa-regular fa-copy"></i>Copy</button>
+                                <button id="copyCount1" class="btn bg-white rounded-lg "><i class="fa-regular fa-copy"></i>Copy</button>
                                 <button id="clickCallButton-1" class="btn bg-[#00A63E] text-white roboto-font rounded-lg"><i
                                     class="fa-solid fa-phone"></i>Call</button>
                             </div>
@@ -88,7 +88,7 @@
                             <h2 class="mt-6 roboto-font text-[32px] font-bold">999</h2>
                             <span class="hind-madurai-font bg-[#F2F2F2] px-4 py-[6px] rounded-full text-[#5C5C5C] text-[18px] mt-[2px]">পুলিশ</span>
                             <div class="card-actions mt-6 justify-between grid grid-cols-2">
-                                <button class="btn bg-white rounded-lg "><i class="fa-regular fa-copy"></i>Copy</button>
+                                <button id="copyCount2" class="btn bg-white rounded-lg "><i class="fa-regular fa-copy"></i>Copy</button>
                                 <button id="clickCallButton-2" class="btn bg-[#00A63E] text-white roboto-font rounded-lg"><i
                                     class="fa-solid fa-phone"></i>Call</button>
                             </div>
@@ -109,7 +109,7 @@
                             <h2 class="mt-6 roboto-font text-[32px] font-bold">999</h2>
                             <span class="hind-madurai-font bg-[#F2F2F2] px-4 py-[6px] rounded-full text-[#5C5C5C] text-[18px] mt-[2px]">ফায়ার</span>
                             <div class="card-actions mt-6 justify-between grid grid-cols-2">
-                                <button class="btn bg-white rounded-lg "><i class="fa-regular fa-copy"></i>Copy</button>
+                                <button id="copyCount3" class="btn bg-white rounded-lg "><i class="fa-regular fa-copy"></i>Copy</button>
                                 <button id="clickCallButton-3" class="btn bg-[#00A63E] text-white roboto-font rounded-lg"><i
                                     class="fa-solid fa-phone"></i>Call</button>
                             </div>
@@ -130,7 +130,7 @@
                             <h2 class="mt-6 roboto-font text-[32px] font-bold">1994-999999</h2>
                             <span class="hind-madurai-font bg-[#F2F2F2] px-4 py-[6px] rounded-full text-[#5C5C5C] text-[18px] mt-[2px]">স্বাস্থ্য</span>
                             <div class="card-actions mt-6 justify-between grid grid-cols-2">
-                                <button class="btn bg-white rounded-lg "><i class="fa-regular fa-copy"></i>Copy</button>
+                                <button id="copyCount4" class="btn bg-white rounded-lg "><i class="fa-regular fa-copy"></i>Copy</button>
                                 <button id="clickCallButton-4" class="btn bg-[#00A63E] text-white roboto-font rounded-lg"><i
                                     class="fa-solid fa-phone"></i>Call</button>
                             </div>
@@ -151,7 +151,7 @@
                             <h2 class="mt-6 roboto-font text-[32px] font-bold">109</h2>
                             <span class="hind-madurai-font bg-[#F2F2F2] px-4 py-[6px] rounded-full text-[#5C5C5C] text-[18px] mt-[2px]">সহায়তা</span>
                             <div class="card-actions mt-6 justify-between grid grid-cols-2">
-                                <button class="btn bg-white rounded-lg "><i class="fa-regular fa-copy"></i>Copy</button>
+                                <button id="copyCount5" class="btn bg-white rounded-lg "><i class="fa-regular fa-copy"></i>Copy</button>
                                 <button id="clickCallButton-5" class="btn bg-[#00A63E] text-white roboto-font rounded-lg"><i
                                     class="fa-solid fa-phone"></i>Call</button>
                             </div>
@@ -172,7 +172,7 @@
                             <h2 class="mt-6 roboto-font text-[32px] font-bold">106</h2>
                             <span class="hind-madurai-font bg-[#F2F2F2] px-4 py-[6px] rounded-full text-[#5C5C5C] text-[18px] mt-[2px]">সরকারি</span>
                             <div class="card-actions mt-6 justify-between grid grid-cols-2">
-                                <button class="btn bg-white rounded-lg "><i class="fa-regular fa-copy"></i>Copy</button>
+                                <button id="copyCount6" class="btn bg-white rounded-lg "><i class="fa-regular fa-copy"></i>Copy</button>
                                 <button id="clickCallButton-6" class="btn bg-[#00A63E] text-white roboto-font rounded-lg"><i
                                     class="fa-solid fa-phone"></i>Call</button>
                             </div>
@@ -193,7 +193,7 @@
                             <h2 class="mt-6 roboto-font text-[32px] font-bold">16216</h2>
                             <span class="hind-madurai-font bg-[#F2F2F2] px-4 py-[6px] rounded-full text-[#5C5C5C] text-[18px] mt-[2px]">বিদ্যুৎ</span>
                             <div class="card-actions mt-6 justify-between grid grid-cols-2">
-                                <button class="btn bg-white rounded-lg "><i class="fa-regular fa-copy"></i>Copy</button>
+                                <button id="copyCount7" class="btn bg-white rounded-lg "><i class="fa-regular fa-copy"></i>Copy</button>
                                 <button id="clickCallButton-7" class="btn bg-[#00A63E] text-white roboto-font rounded-lg"><i
                                     class="fa-solid fa-phone"></i>Call</button>
                             </div>
@@ -214,7 +214,7 @@
                             <h2 class="mt-6 roboto-font text-[32px] font-bold">16445</h2>
                             <span class="hind-madurai-font bg-[#F2F2F2] px-4 py-[6px] rounded-full text-[#5C5C5C] text-[18px] mt-[2px]">এনজিও</span>
                             <div class="card-actions mt-6 justify-between grid grid-cols-2">
-                                <button class="btn bg-white rounded-lg "><i class="fa-regular fa-copy"></i>Copy</button>
+                                <button id="copyCount8" class="btn bg-white rounded-lg "><i class="fa-regular fa-copy"></i>Copy</button>
                                 <button id="clickCallButton-8" class="btn bg-[#00A63E] text-white roboto-font rounded-lg"><i
                                     class="fa-solid fa-phone"></i>Call</button>
                             </div>
@@ -235,7 +235,7 @@
                             <h2 class="mt-6 roboto-font text-[32px] font-bold">163</h2>
                             <span class="hind-madurai-font bg-[#F2F2F2] px-4 py-[6px] rounded-full text-[#5C5C5C] text-[18px] mt-[2px]">পরিবহন</span>
                             <div class="card-actions mt-6 justify-between grid grid-cols-2">
-                                <button class="btn bg-white rounded-lg "><i class="fa-regular fa-copy"></i>Copy</button>
+                                <button id="copyCount9" class="btn bg-white rounded-lg "><i class="fa-regular fa-copy"></i>Copy</button>
                                 <button id="clickCallButton-9" class="btn bg-[#00A63E] text-white roboto-font rounded-lg"><i
                                     class="fa-solid fa-phone"></i>Call</button>
                             </div>
@@ -252,90 +252,44 @@
                         <h2 class="font-medium text-xl roboto-font"><i class="fa-regular fa-clock mr-2 text-[#5C5C5C]"></i>Call History</h2>
                     </div>
                     <div>
-                        <button type="submit" class="btn text-white rounded-[50px] font-semibold inter-font bg-[#00A63E]">Clear</button>
+                        <button id="clear-button" type="submit" class="btn text-white rounded-[50px] font-semibold inter-font bg-[#00A63E]">Clear</button>
                     </div>
                     </div>
 
                     <div id="nationalEmergencyCallHistory" style="display: none;" class="flex justify-between items-center mt-4 bg-[#FAFAFA] p-4 rounded-lg">
-                        <div>
-                            <h3 class="text-[18px] font-semibold">জাতীয় জরুরি সেবা</h3>
-                            <p class="mt-1 text-[18px] font-medium text-[#5C5C5C]">999</p>
-                        </div>
-                        <div>
-                            <p id="current-time" class="text-[18px]"></p>
-                        </div>
+                        
                     </div>
+
                     <div id="policeCallHistory" style="display: none;" class="flex justify-between items-center mt-4 bg-[#FAFAFA] p-4 rounded-lg">
-                        <div>
-                            <h3 class="text-[18px] font-semibold">পুলিশ</h3>
-                            <p class="mt-1 text-[18px] font-medium text-[#5C5C5C]">999</p>
-                        </div>
-                        <div>
-                            <p id="current-time" class="text-[18px]"></p>
-                        </div>
+                        
                     </div>
+
                     <div id="fireServiceCallHistory" style="display: none;" class="flex justify-between items-center mt-4 bg-[#FAFAFA] p-4 rounded-lg">
-                        <div>
-                            <h3 class="text-[18px] font-semibold">ফায়ার সার্ভিস</h3>
-                            <p class="mt-1 text-[18px] font-medium text-[#5C5C5C]">999</p>
-                        </div>
-                        <div>
-                            <p id="current-time" class="text-[18px]"></p>
-                        </div>
+                        
                     </div>
+
                     <div id="ambulanceCallHistory" style="display: none;" class="flex justify-between items-center mt-4 bg-[#FAFAFA] p-4 rounded-lg">
-                        <div>
-                            <h3 class="text-[18px] font-semibold">অ্যাম্বুলেন্স</h3>
-                            <p class="mt-1 text-[18px] font-medium text-[#5C5C5C]">1994-999999</p>
-                        </div>
-                        <div>
-                            <p id="current-time" class="text-[18px]"></p>
-                        </div>
+                        
                     </div>
+
                     <div id="women&ChildHelplineCallHistory" style="display: none;" class="flex justify-between items-center mt-4 bg-[#FAFAFA] p-4 rounded-lg">
-                        <div>
-                            <h3 class="text-[18px] font-semibold">নারী ও শিশু সহায়তা</h3>
-                            <p class="mt-1 text-[18px] font-medium text-[#5C5C5C]">109</p>
-                        </div>
-                        <div>
-                            <p id="current-time" class="text-[18px]"></p>
-                        </div>
+                        
                     </div>
+
                     <div id="antiCorruptionCallHistory" style="display: none;" class="flex justify-between items-center mt-4 bg-[#FAFAFA] p-4 rounded-lg">
-                        <div>
-                            <h3 class="text-[18px] font-semibold">দুদক</h3>
-                            <p class="mt-1 text-[18px] font-medium text-[#5C5C5C]">106</p>
-                        </div>
-                        <div>
-                            <p id="current-time" class="text-[18px]"></p>
-                        </div>
+                       
                     </div>
+
                     <div id="electricityOutageCallHistory" style="display: none;" class="flex justify-between items-center mt-4 bg-[#FAFAFA] p-4 rounded-lg">
-                        <div>
-                            <h3 class="text-[18px] font-semibold">বিদ্যুৎ বিভ্রাট</h3>
-                            <p class="mt-1 text-[18px] font-medium text-[#5C5C5C]">16216</p>
-                        </div>
-                        <div>
-                            <p id="current-time" class="text-[18px]"></p>
-                        </div>
+                        
                     </div>
+
                     <div id="bracCallHistory" style="display: none;" class="flex justify-between items-center mt-4 bg-[#FAFAFA] p-4 rounded-lg">
-                        <div>
-                            <h3 class="text-[18px] font-semibold">ব্র্যাক</h3>
-                            <p class="mt-1 text-[18px] font-medium text-[#5C5C5C]">16445</p>
-                        </div>
-                        <div>
-                            <p id="current-time" class="text-[18px]"></p>
-                        </div>
+                        
                     </div>
+
                     <div id="bangladeshRailwayCallHistory" style="display: none;" class="flex justify-between items-center mt-4 bg-[#FAFAFA] p-4 rounded-lg">
-                        <div>
-                            <h3 class="text-[18px] font-semibold">বাংলাদেশ রেলওয়ে</h3>
-                            <p class="mt-1 text-[18px] font-medium text-[#5C5C5C]">163</p>
-                        </div>
-                        <div>
-                            <p id="current-time" class="text-[18px]"></p>
-                        </div>
+                        
                     </div>
 
 
