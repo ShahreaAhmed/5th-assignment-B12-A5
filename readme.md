@@ -41,6 +41,7 @@ When an event occurs on a dom element, it starts from the innermost element and 
 Let's say there is an HTML file below.
 <div id="parent">
 <button id="child">Click me<button>
+</div>
 
 Suppose there is a javascript file below.
 document.getElementById('child')
